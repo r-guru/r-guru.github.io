@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="home">
+
+  <h3>CO NABÍZÍME?</h3>
+  <br>
+
+  <div class="container-fluid main-container">
+  <!-- <ul class="post-list"> -->
+
+    {% for post in site.portfolios %}
+      <!-- <li> -->
+    <h3>
+       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h3>
+    <div class="row">    
+     <div class="col-sm-5 benefits">   
+
+     </div>
+     <div class="col-sm-5">
+        <img class="main-screenshot" src="{{post.image}}">   
+     </div>   
+    </div>    
+
+      <!-- </li> -->
+    {% endfor %}
+  <!-- </ul> -->
+
+</div>
+</div>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+
+<div class="row">
+
+   <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+         <li><a href="#"> <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8593;</strong> </a>
+        </li>
+      {% if page.submenu %}
+        {% for item in page.submenu %}
+          <li><a href="#{{item.hook}}">{{ item.title }}</a></li>
+        {% endfor%}
+      {% endif %}    
+      </ul>
+    </div>
+      
+  
+        
+  <div class="col-md-12" role="main">
+    {{ content }}
+  </div>
+
+</div>
+
+

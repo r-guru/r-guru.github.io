@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+
+<div class="jumbotron">
+  <div class="container-fluid main-container">
+    <div class="row">
+
+      <div class="col-sm-5 benefits">
+        <div class="hidden-xs">&nbsp;</div>
+        
+          {{content}}      
+      
+        </div>
+
+      <div class="col-sm-7">
+        <div id="widget-carousel" class="carousel slide" data-ride="carousel" data-pause="">
+       
+         {% if page.slides %}
+
+            <ol class="carousel-indicators">
+            {% for slide in page.slides %}
+              <li data-target="#widget-carousel" data-slide-to= "{{slide.id}}" id = "w-{{slide.id}}"></li>
+            {% endfor %}
+            </ol>
+            <div class="carousel-inner" role="listbox">            
+              {% for slide in page.slides %}
+              <div class="item" data-slide="{{slide.id}}" id="d-{{slide.id}}">
+              <div class="carousel-caption"><span id="carousel-caption-highlight">{{slide.caption}}</span></div>
+                <img class="main-screenshot" src="{{slide.image}}">
+              </div>
+              {% endfor %}
+            </div>    
+          
+          {% endif %}
+
+        
+
+          <a class="left carousel-control hide" href="#widget-carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>   
+            
+          <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control hide" href="#widget-carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          
+        </div>
+
+
+      </div>
+
+
+    </div> <!-- row -->
+  </div> <!-- container-fluid main-container -->
+</div> <!-- jumbotron -->
+
+<script type="text/javascript">
+  $("#d-0").addClass('active')
+  $("#w-0").addClass('active')
+</script>

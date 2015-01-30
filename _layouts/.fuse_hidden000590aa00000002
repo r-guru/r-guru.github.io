@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="home">
+
+  <h3>CO NABÍZÍME?</h3>
+  <br>
+
+  <div class="container-fluid main-container">
+  <ul class="post-list">
+
+    {% for post in site.portfolios %}
+      <li>
+        <h3>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+
+
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
+</div>

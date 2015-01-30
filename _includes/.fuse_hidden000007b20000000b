@@ -1,0 +1,37 @@
+
+<div class="header">
+
+  <div id="wrapper" class="top">
+  <!-- <div id="page-content-wrapper"> -->
+
+   <nav class="navbar">
+
+      <div class="navbar navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+          <span class="glyphicon glyphicon-menu-down"><strong> >>> </strong></span>
+        </button>
+
+        <h3 class="navbar-left"><strong>r-guru</strong></h3>
+      </div>
+
+      <div class="collapse navbar-collapse" id="menu">  
+        <ul class="nav navbar-nav navbar-right">
+            
+            {% assign pages = site.pages | sort:"weight" %}
+            {% for p in pages %}
+              
+              {% if p.title %}
+
+                <li role="presentation" id = "nav-{{p.title}}"><a class="page-link" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
+
+              {% endif %}
+            {% endfor %}
+
+        </ul>
+      </div>
+  </nav>
+
+
+  <!-- </div>  -->
+  </div>
+</div>

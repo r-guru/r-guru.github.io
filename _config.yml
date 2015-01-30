@@ -1,0 +1,15 @@
+# Site settings
+title: r-guru
+email: info@r-guru.cz
+description: > # this means to ignore newlines until "baseurl:"
+  analýzy a vizualizace dat, kurzy R
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://r-guru.cz" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+collections:
+- portfolios
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
