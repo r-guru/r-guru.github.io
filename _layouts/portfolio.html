@@ -5,8 +5,8 @@ layout: default
 
   <div class="container-fluid main-container">
   <!-- <ul class="post-list"> -->
-
-    {% for post in site.portfolios %}
+ {% assign ports = site.portfolios | sort:"weight" %}
+    {% for post in ports %}
       <!-- <li> -->
     <h3>
        <!-- <a href="{{ post.url | prepend: site.baseurl }}"> -->
@@ -14,7 +14,7 @@ layout: default
        <!-- </a> -->
     </h3>
     <div class="row portfolio">    
-     <div class="col-sm-8 benefits">   
+     <div class="col-sm-8 portfolio-content">   
      {{post.content}}
      </div>
      <div class="col-sm-4">
