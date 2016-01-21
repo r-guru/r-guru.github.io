@@ -1,2 +1,4 @@
 _site
+_site_orig
 .sass-cache
+.Rproj.user

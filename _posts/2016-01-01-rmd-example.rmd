@@ -1,0 +1,33 @@
+---
+layout: page
+title: Interactive web applications
+author: Stanislav Horáček
+date: 2016-01-01
+output: html_fragment
+permalink: /blog/web_applications
+---
+
+## Creating a simple web application
+### Shiny package
+Web applications in R are provided by the `shiny` package:
+
+* website: <http://shiny.rstudio.com/>
+* tutorial: <http://shiny.rstudio.com/tutorial/>
+
+### Application showing your favourite movie
+1. Create an application directory, e.g. `viewer`.
+2. Create two files in it (alternative: single file `app.R`):
+  * `ui.R` – client part running in web browser – user interface,
+  * `server.R` – server part running on web server (or locally) – computation, plotting etc.
+3. Run it by `shiny::runApp("viewer")` or by the `Run App` button in RStudio. (It runs in your web browser locally at `http://127.0.0.1:XXXX`, where XXXX is some port number.)
+
+```{r, echo=TRUE}
+library(ggplot2)
+library(data.table)
+cat("Text vypsaný Rkem\n")
+cat("a na dalším řádku\n")
+```
+
+A to je teda vše!
+
+kus na konci to sežere
