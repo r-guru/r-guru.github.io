@@ -25,7 +25,11 @@ module Jekyll
       R.eval "require(knitr)"
       R.assign "content", content
       R.eval "content <- (knitr::knit2html(text = content, fragment.only = TRUE))"
-      R.pull "content"
+      # rinruby's pull has issue with diacritics - the string is trimmed if chars with diacritics are contained
+      # ugly workaround: pull doubled string and remove the second part by the separating string
+      R.eval "content <- paste0(content, '$endofknitted$', content)"
+      knitted = R.pull "content"
+      knitted[0 .. knitted.index("$endofknitted$") - 1]
     end
   end
 end
