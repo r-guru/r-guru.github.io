@@ -1,6 +1,6 @@
 ---
 title: Webové stránky založené na markdownu
-image: "../figs/slider/r-guru.png"
+image: "../figs/slider/web.png"
 weight: 55
 ---
 

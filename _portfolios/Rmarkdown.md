@@ -1,6 +1,6 @@
 ---
 title: Rmarkdown
-image: "../figs/slider/synth_e.png"
+image: "../figs/slider/slider_visual2.png"
 weight: 25
 ---
 

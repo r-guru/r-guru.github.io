@@ -1,6 +1,6 @@
 ---
 title: GIS v Rku
-image: "../figs/slider/P-obs_e.png"
+image: "../figs/slider/slider_gis2.png"
 weight: 15
 ---
 
