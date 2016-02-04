@@ -5,8 +5,6 @@
   src: url(fonts/cmunbmr.otf) ;
 }
 
-
-
 @font-face {
   font-family: 'AMS';
   font-style: normal;
@@ -19,27 +17,6 @@
   font-style: bold;
   font-weight: 900;
   src: url(fonts/AMSANSR.otf) ;
-}
-
-@font-face {
-  font-family: 'Neohelenic';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/GFSNeohellenic.otf), url(fonts/GFSNeohellenic.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'TGH';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/texgyreheros-regular.otf);
-}
-
-@font-face {
-  font-family: 'TGA';
-  font-style: normal;
-  font-weight: 700;
-  src: url(fonts/texgyreadventor-regular.otf);
 }
 
 body {
@@ -117,7 +94,6 @@ a:visited {
   padding-top: 10px;
   color:#b9d688;
   border-bottom: 2px dotted #d2efa1;
-  /*font-family: TGA!important;*/
 }
 
 .navbar-right {
