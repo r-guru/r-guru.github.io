@@ -12,5 +12,5 @@ collections:
 
 # Build settings
 markdown: kramdown
-markdown_ext: md
+markdown_ext: "md,markdown"
 highlighter: pygments
